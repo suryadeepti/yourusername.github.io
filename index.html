@@ -96,22 +96,37 @@
     }
 
     /* Skills Section */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .skill {
-      background: #edf2f4;
-      color: #2b2d42;
-      padding: 8px 15px;
-      border-radius: 20px;
-      font-size: 0.95em;
-      font-weight: 500;
-      border: 1px solid #ddd;
-    }
+  #skills {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  #skills h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #222;
+    text-align: left;
+  }
+  
+  .skill-category {
+    margin-bottom: 25px;
+  }
+  
+  .skill-category h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .skill-category p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+  }
 
     /* Certifications Section */
     .certification {
@@ -239,42 +254,41 @@
   <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">Python</div>
-      <div class="skill">SQL</div>
-      <div class="skill">Prophet</div>
-      <div class="skill">ARIMA</div>
-      <div class="skill">XGBoost</div>
-      <div class="skill">Scikit-learn</div>
-      <div class="skill">Pandas</div>
-      <div class="skill">NumPy</div>
-      <div class="skill">Power BI</div>
-      <div class="skill">OpenCV</div>
-      <div class="skill">TensorFlow</div>
-      <div class="skill">LangChain</div>
-      <div class="skill">GitHub</div>
-      <div class="skill">Forecasting</div>
+  
+    <div class="skill-category">
+      <h3>🛠️ Tools & Platforms</h3>
+      <p>Python, SQL, PySpark, Jupyter, VSCode, Databricks, Azure, Google Colab, Metabase</p>
+    </div>
+  
+    <div class="skill-category">
+      <h3>🤖 Machine Learning & Deep Learning</h3>
+      <p>Linear Regression, Logistic Regression, SVM, KNN, Decision Tree, Random Forest, XGBoost, K-Means, ANN, CNN, RNN, LSTM, Transformers</p>
+    </div>
+  
+    <div class="skill-category">
+      <h3>📈 Time Series</h3>
+      <p>Forecasting, ETS, Prophet, ARIMA</p>
+    </div>
+  
+    <div class="skill-category">
+      <h3>🗣️ Natural Language Processing (NLP)</h3>
+      <p>Text Classification, Language Detection, Embedding Models, Prompt Engineering</p>
+    </div>
+  
+    <div class="skill-category">
+      <h3>👁️ Computer Vision</h3>
+      <p>Object Detection, Image Classification</p>
     </div>
   </section>
 
-  <!-- Certifications Section -->
   <section id="certifications">
     <h2>Certifications</h2>
-
-    <div class="certification">
-      <h3>Google Data Analytics Professional Certificate</h3>
-      <p>Google — Coursera (2023)</p>
-    </div>
-
-    <div class="certification">
-      <h3>Machine Learning Specialization</h3>
-      <p>Andrew Ng — Coursera (2024)</p>
-    </div>
-
-    <div class="certification">
-      <h3>Forecasting with Time Series Data in Python</h3>
-      <p>DataCamp (2024)</p>
-    </div>
+    <ul class="cert-list">
+      <li>🎓 <strong>Generative AI (LLMs)</strong> – Coursera</li>
+      <li>🤖 <strong>Machine Learning</strong> – Coursera (Andrew Ng)</li>
+      <li>🧠 <strong>Deep Learning</strong> – Coursera (Andrew Ng)</li>
+      <li>🐍 <strong>Python, NumPy, Pandas</strong> – Kaggle</li>
+    </ul>
   </section>
 
   <!-- Hobbies Section -->
